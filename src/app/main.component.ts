@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'main-root',
-  template: `<base-layout></base-layout>`
+  template: `<router-outlet></router-outlet>`
 })
 export class MainComponent implements OnInit {
 

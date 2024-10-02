@@ -3,16 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { MainRoutingModule } from './main-routing';
 import { MainComponent } from './main.component';
-import { BaseLayoutComponent } from './common/layout/base/base.layout';
+import { AdminRouting } from './screen/admin/admin-routing';
 
 @NgModule({
   declarations: [
-    MainComponent,
-    BaseLayoutComponent
+    MainComponent
   ],
   imports: [
     BrowserModule,
-    MainRoutingModule
+    MainRoutingModule,
+    AdminRouting,
   ],
   providers: [],
   bootstrap: [MainComponent]

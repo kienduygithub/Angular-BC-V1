@@ -1,8 +1,8 @@
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { AppModule } from './app/app.module';
+import { MainModule } from './app/main.module';
 
-platformBrowserDynamic().bootstrapModule(AppModule, {
+platformBrowserDynamic().bootstrapModule(MainModule, {
   ngZoneEventCoalescing: true
 })
   .catch(err => console.error(err));

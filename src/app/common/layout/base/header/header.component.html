@@ -1,4 +1,4 @@
-<div>Header works!</div>
+<div>{{ "Home Works!" | capitalize }}</div>
 <div>
   <button (click)="OnSwitchLanguage('en')">
     {{ "button.en" | translate }}
@@ -7,3 +7,5 @@
     {{ "button.vi" | translate }}
   </button>
 </div>
+<input type="text" [(ngModel)]="lang" />
+<mat-icon>account_box</mat-icon>

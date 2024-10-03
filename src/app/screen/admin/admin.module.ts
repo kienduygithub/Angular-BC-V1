@@ -20,7 +20,7 @@ import { AdminDashboardScreen } from "./dashboard/dashboard.screen";
         AdminRouting,
         BaseLayoutComponent,
         AdminHeaderBaseComponent,
-        TranslateModule
+        TranslateModule,
     ],
 })
 

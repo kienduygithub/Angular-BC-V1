@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { TranslateService } from "@ngx-translate/core";
 
 @Component({
     standalone: false,
@@ -8,4 +9,12 @@ import { Component } from "@angular/core";
     providers: []
 })
 
-export class AdminDashboardScreen { }
+export class AdminDashboardScreen {
+
+    constructor(
+        private translate: TranslateService
+    ) {
+        // translate.setDefaultLang('en');
+        // translate.use('en');
+    }
+}

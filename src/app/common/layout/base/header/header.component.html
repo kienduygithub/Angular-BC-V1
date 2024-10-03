@@ -1,1 +1,9 @@
 <div>Header works!</div>
+<div>
+  <button (click)="OnSwitchLanguage('en')">
+    {{ "button.en" | translate }}
+  </button>
+  <button (click)="OnSwitchLanguage('vi')">
+    {{ "button.vi" | translate }}
+  </button>
+</div>

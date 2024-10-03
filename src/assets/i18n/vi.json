@@ -1,0 +1,13 @@
+{
+    "admin": {
+        "header": {},
+        "sidebar": {},
+        "dashboard": {
+            "hello": "Xin chào!"
+        } 
+    },
+    "button": {
+        "en": "Tiếng Anh",
+        "vi": "Tiếng Việt"
+    }
+}

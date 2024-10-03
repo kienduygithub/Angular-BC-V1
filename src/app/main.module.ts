@@ -31,7 +31,6 @@ export const AppConfigFactory = (appConfig: AppConfig) => {
     HttpClientModule,
     AppLayoutModule.forRoot(),
     TranslateModule.forRoot({
-      // defaultLanguage: JSON.parse(localStorage.getItem("currLang")!) ?? environment.lang,
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,

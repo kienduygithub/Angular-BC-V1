@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { AdminBookingCare } from "./admin.screen";
 import { AdminDashboardScreen } from "./dashboard/dashboard.screen";
+import { AdminEmployeesScreen } from "./employees/employees.screen";
 
 const routes: Routes = [
     {
@@ -17,6 +18,10 @@ const routes: Routes = [
             {
                 path: 'dashboard',
                 component: AdminDashboardScreen
+            },
+            {
+                path: 'employees',
+                component: AdminEmployeesScreen
             }
         ]
     }

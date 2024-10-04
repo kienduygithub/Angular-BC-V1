@@ -8,11 +8,13 @@ import { TranslateLoader, TranslateModule } from "@ngx-translate/core";
 import { HttpLoaderFactory } from "../../main.module";
 import { HttpClient } from "@angular/common/http";
 import { AdminDashboardScreen } from "./dashboard/dashboard.screen";
+import { AdminEmployeesScreen } from "./employees/employees.screen";
 
 @NgModule({
     declarations: [
         AdminBookingCare,
-        AdminDashboardScreen
+        AdminDashboardScreen,
+        AdminEmployeesScreen
     ],
     providers: [],
     imports: [

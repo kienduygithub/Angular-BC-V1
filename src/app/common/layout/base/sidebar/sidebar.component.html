@@ -1,1 +1,25 @@
-<div>Sidebar works!</div>
+<div class="sidebar-container">
+    <div class="logo-container {{isOpen ? '' : 'hide'}}">
+        <div class="logo">
+            <i class="fa-solid fa-cloud"></i>
+            <h3>Signature</h3>
+        </div>
+        <button (click)="OnToggleSidebar()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+    <ul class="menu-sidebar">
+        <li class="menu-item" [routerLink]="['/admin/dashboard']">
+            <a class="menu-link-item" routerLinkActive="active">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+        <li class="menu-item" [routerLink]="['/admin/employees']">
+            <a class="menu-link-item" routerLinkActive="active">
+                <i class="fa-solid fa-users"></i>
+                <span>Employees</span>
+            </a>
+        </li>
+    </ul>
+</div>

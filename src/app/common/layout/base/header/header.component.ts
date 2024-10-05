@@ -5,7 +5,7 @@ import { AppConfig } from "../../../config/app.config";
 import { AppLayoutModule } from "../../app-layout.module";
 import { ImageResource } from "../../../resource/image_resource";
 import { LangModel } from "../../../model/lang.model";
-
+import { AdminHeaderNotifyComponent } from "./header.notify";
 @Component({
     standalone: true,
     selector: 'admin-header-base',
@@ -14,7 +14,9 @@ import { LangModel } from "../../../model/lang.model";
     imports: [
         CommonModule,
         TranslateModule,
-        AppLayoutModule
+        AppLayoutModule,
+        AdminHeaderNotifyComponent,
+        AdminHeaderNotifyComponent
     ],
     providers: []
 })

@@ -1,6 +1,10 @@
 {
     "admin": {
         "header": {
+            "notify": {
+                "all": "Tất cả",
+                "unread": "Chưa đọc"
+            },
             "account": {
                 "info": "Thông tin tài khoản",
                 "logout": "Đăng xuất"

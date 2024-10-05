@@ -9,6 +9,7 @@ import { HttpLoaderFactory } from "../../main.module";
 import { HttpClient } from "@angular/common/http";
 import { AdminDashboardScreen } from "./dashboard/dashboard.screen";
 import { AdminEmployeesScreen } from "./employees/employees.screen";
+import { AppLayoutModule } from "../../common/layout/app-layout.module";
 
 @NgModule({
     declarations: [
@@ -23,6 +24,7 @@ import { AdminEmployeesScreen } from "./employees/employees.screen";
         BaseLayoutComponent,
         AdminHeaderBaseComponent,
         TranslateModule,
+        AppLayoutModule
     ],
 })
 

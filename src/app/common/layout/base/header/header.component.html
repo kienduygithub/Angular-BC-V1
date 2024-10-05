@@ -20,7 +20,21 @@
       <span class="badge">9</span>
     </div>
     <div class="menu-dropdown notify {{isOpenDropdownNotify ? '' : 'hide'}}">
-      abc
+      <mat-tab-group>
+        <mat-tab label='{{"admin.header.notify.all" | translate}}'>
+          <div class="list-notify">
+            <admin-header-notify></admin-header-notify>
+            <admin-header-notify></admin-header-notify>
+            <admin-header-notify></admin-header-notify>
+            <admin-header-notify></admin-header-notify>
+            <admin-header-notify></admin-header-notify>
+            <admin-header-notify></admin-header-notify>
+            <admin-header-notify></admin-header-notify>
+            <admin-header-notify></admin-header-notify>
+          </div>
+        </mat-tab>
+        <mat-tab label='{{"admin.header.notify.unread" | translate}}'> Content 2 </mat-tab>
+      </mat-tab-group>
     </div>
   </div>
   <div class="header-item account">

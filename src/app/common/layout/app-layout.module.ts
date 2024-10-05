@@ -10,6 +10,8 @@ import { MatCardModule } from "@angular/material/card";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatNativeDateModule } from "@angular/material/core";
 import { DefaultMatCalendarRangeStrategy, MatDatepickerModule, MatRangeDateSelectionModel } from "@angular/material/datepicker";
+import { DateTransformPipe } from "./pipes/date-transform.pipe";
+import { MatTabsModule } from "@angular/material/tabs";
 
 const MAT_MODULES = [
     FormsModule,
@@ -22,11 +24,13 @@ const MAT_MODULES = [
     MatCardModule,
     MatSidenavModule,
     MatNativeDateModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatTabsModule
 ]
 
 const PIPES = [
-    CapitalizePipe
+    CapitalizePipe,
+    DateTransformPipe
 ]
 
 @NgModule({

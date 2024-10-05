@@ -1,6 +1,10 @@
 {
     "admin": {
         "header": {
+            "notify": {
+                "all": "All",
+                "unread": "Unread"
+            },
             "account": {
                 "info": "Account infomation",
                 "logout": "Sign out"

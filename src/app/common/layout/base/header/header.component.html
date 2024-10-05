@@ -1,3 +1,39 @@
 <div class="header-container">
-  Header Container
+  <div class="header-item lang">
+    <div class="dropdown" (click)="OnToggleDropdownLang()">
+      <i class="fa-solid fa-globe"></i>
+      <span>{{ langText | translate}}</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+    <ul class="menu-dropdown language {{isOpenDropdownLang ? '' : 'hide'}}">
+      <li class="menu-dropdown-item" (click)="OnSwitchLanguage('en')">
+        {{ 'lang.en' | translate}}
+      </li>
+      <li class="menu-dropdown-item" (click)="OnSwitchLanguage('vi')">
+        {{ 'lang.vi' | translate}}
+      </li>
+    </ul>
+  </div>
+  <div class="header-item notification">
+    <div class="dropdown" (click)="OnToggleDropdownNotify()">
+      <i class="fa-solid fa-bell"></i>
+      <span class="badge">9</span>
+    </div>
+    <div class="menu-dropdown notify {{isOpenDropdownNotify ? '' : 'hide'}}">
+      abc
+    </div>
+  </div>
+  <div class="header-item account">
+    <div class="avatar dropdown" (click)="OnToggleDropdownAccount()">
+      <i class="fa-solid fa-user"></i>
+    </div>
+    <div class="menu-dropdown user {{isOpenDropdownAccount ? '': 'hide'}}">
+      <li class="menu-dropdown-item">
+        {{ "admin.header.account.info" | translate}}
+      </li>
+      <li class="menu-dropdown-item">
+        {{ "admin.header.account.logout" | translate}}
+      </li>
+    </div>
+  </div>
 </div>

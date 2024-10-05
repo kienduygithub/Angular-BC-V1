@@ -1,12 +1,20 @@
 {
     "admin": {
-        "header": {},
-        "sidebar": {},
+        "header": {
+            "account": {
+                "info": "Account infomation",
+                "logout": "Sign out"
+            }
+        },
+        "sidebar": {
+            "dashboard": "Dashboard",
+            "employees": "Employees"
+        },
         "dashboard": {
             "hello": "Hello"
         } 
     },
-    "button": {
+    "lang": {
         "en": "English",
         "vi": "Vietnamese"
     }

@@ -1,12 +1,20 @@
 {
     "admin": {
-        "header": {},
-        "sidebar": {},
+        "header": {
+            "account": {
+                "info": "Thông tin tài khoản",
+                "logout": "Đăng xuất"
+            }
+        },
+        "sidebar": {
+            "dashboard": "Tổng quan",
+            "employees": "Nhân sự"
+        },
         "dashboard": {
             "hello": "Xin chào!"
         } 
     },
-    "button": {
+    "lang": {
         "en": "Tiếng Anh",
         "vi": "Tiếng Việt"
     }

@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Output } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { AppLayoutModule } from "../../app-layout.module";
+import { TranslateModule } from "@ngx-translate/core";
 
 @Component({
     standalone: true,
@@ -9,7 +10,8 @@ import { AppLayoutModule } from "../../app-layout.module";
     styleUrl: 'sidebar.component.scss',
     imports: [
         RouterModule,
-        AppLayoutModule
+        TranslateModule,
+        AppLayoutModule,
     ],
     providers: []
 })

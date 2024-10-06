@@ -68,7 +68,7 @@
         .menu-item {
             height: 55px;
             width: 100%;
-            padding: 4px;
+            padding: 4px 0 4px 4px;
             background-color: #F9F9F9;
             cursor: default;
 
@@ -98,7 +98,7 @@
                         border-radius: 50%;
                         background-color: none;
                         top: -20px;
-                        right: 5px;
+                        right: 0px;
                         box-shadow: 10px 10px 0px #eee;
                     }
 
@@ -110,7 +110,7 @@
                         border-radius: 50%;
                         background-color: none;
                         bottom: -20px;
-                        right: 5px;
+                        right: 0px;
                         box-shadow: 10px -10px 0px #eee;
                     }
                 }

@@ -10,8 +10,15 @@ import { MatCardModule } from "@angular/material/card";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatNativeDateModule } from "@angular/material/core";
 import { DefaultMatCalendarRangeStrategy, MatDatepickerModule, MatRangeDateSelectionModel } from "@angular/material/datepicker";
-import { DateTransformPipe } from "./pipes/date-transform.pipe";
 import { MatTabsModule } from "@angular/material/tabs";
+import { NzButtonModule } from "ng-zorro-antd/button";
+import { NzIconModule } from "ng-zorro-antd/icon";
+import { NzMenuModule } from 'ng-zorro-antd/menu';
+const ANTD_MODULES = [
+    NzButtonModule,
+    NzIconModule,
+    NzMenuModule
+]
 
 const MAT_MODULES = [
     FormsModule,
@@ -30,7 +37,7 @@ const MAT_MODULES = [
 
 @NgModule({
     declarations: [],
-    exports: [...MAT_MODULES],
+    exports: [...MAT_MODULES, ...ANTD_MODULES],
     imports: [
 
     ]

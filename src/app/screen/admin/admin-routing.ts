@@ -12,7 +12,7 @@ const routes: Routes = [
     },
     {
         path: '',
-        title: 'Booking Care - Admin',
+        title: 'SGO - Admin',
         component: AdminBookingCare,
         children: [
             {

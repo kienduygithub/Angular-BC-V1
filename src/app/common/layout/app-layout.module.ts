@@ -28,14 +28,9 @@ const MAT_MODULES = [
     MatTabsModule
 ]
 
-const PIPES = [
-    CapitalizePipe,
-    DateTransformPipe
-]
-
 @NgModule({
-    declarations: [...PIPES],
-    exports: [...PIPES, ...MAT_MODULES],
+    declarations: [],
+    exports: [...MAT_MODULES],
     imports: [
 
     ]

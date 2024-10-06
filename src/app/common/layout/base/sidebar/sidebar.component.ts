@@ -2,6 +2,7 @@ import { Component, EventEmitter, Output } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { AppLayoutModule } from "../../app-layout.module";
 import { TranslateModule } from "@ngx-translate/core";
+import { AppPipeModule } from "../../app.pipe";
 
 @Component({
     standalone: true,
@@ -12,6 +13,7 @@ import { TranslateModule } from "@ngx-translate/core";
         RouterModule,
         TranslateModule,
         AppLayoutModule,
+        AppPipeModule
     ],
     providers: []
 })

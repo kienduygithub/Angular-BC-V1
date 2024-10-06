@@ -14,10 +14,12 @@ import { MatTabsModule } from "@angular/material/tabs";
 import { NzButtonModule } from "ng-zorro-antd/button";
 import { NzIconModule } from "ng-zorro-antd/icon";
 import { NzMenuModule } from 'ng-zorro-antd/menu';
+import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
 const ANTD_MODULES = [
     NzButtonModule,
     NzIconModule,
-    NzMenuModule
+    NzMenuModule,
+    NzToolTipModule,
 ]
 
 const MAT_MODULES = [

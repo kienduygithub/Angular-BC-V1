@@ -7,18 +7,18 @@
     display: flex;
     justify-content: right;
 
-    &::before {
-        content: "";
-        width: 20px;
-        height: 20px;
-        background-color: none;
-        z-index: 10000;
-        position: absolute;
-        top: 80px;
-        left: 0px;
-        border-radius: 50%;
-        box-shadow: -10px -10px 0 #F9F9F9;
-    }
+    // &::before {
+    //     content: "";
+    //     width: 20px;
+    //     height: 20px;
+    //     background-color: none;
+    //     z-index: 10000;
+    //     position: absolute;
+    //     top: 80px;
+    //     left: 0px;
+    //     border-radius: 50%;
+    //     box-shadow: -10px -10px 0 #F9F9F9;
+    // }
 
     .header-item {
         position: relative;

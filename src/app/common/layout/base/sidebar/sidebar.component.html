@@ -1,25 +1,27 @@
 <div class="sidebar-container">
     <div class="logo-container {{isOpen ? '' : 'hide'}}">
         <div class="logo">
-            <i class="fa-solid fa-cloud"></i>
-            <h3>Signature</h3>
+            <span nz-icon nzType="ant-design" nzTheme="outline"></span>
+            <h3>Safegate</h3>
         </div>
         <button (click)="OnToggleSidebar()">
-            <mat-icon>menu</mat-icon>
+            <span nz-icon nzType="{{!isOpen ? 'menu-unfold' : 'menu-fold'}}" nzTheme="outline"></span>
         </button>
     </div>
-    <ul class="menu-sidebar">
-        <li class="menu-item" [routerLink]="['/admin/dashboard']">
-            <a class="menu-link-item" routerLinkActive="active">
-                <i class="fa-solid fa-layer-group"></i>
-                <span>{{"admin.sidebar.dashboard" | translate}}</span>
-            </a>
+
+    <ul class="sidebar" nz-menu nzMode="inline" [nzInlineCollapsed]="!isOpen">
+        <li nz-menu-item nz-tooltip nzTooltipPlacement="right"
+            [nzTooltipTitle]='isOpen ? ("admin.sidebar.dashboard" | translate) : ""'
+            [routerLink]="['/admin/dashboard']">
+            <span nz-icon nzType="home" nzTheme="outline"></span>
+            <span>{{'admin.sidebar.dashboard' | translate}}</span>
         </li>
-        <li class="menu-item" [routerLink]="['/admin/employees']">
-            <a class="menu-link-item" routerLinkActive="active">
-                <i class="fa-solid fa-users"></i>
-                <span>{{"admin.sidebar.employees" | translate}}</span>
-            </a>
+        <li class="submenu-1" nz-submenu nzTitle='{{"admin.sidebar.account" | translate}}' nzIcon="team">
+            <ul>
+                <li nz-menu-item [routerLink]="['/admin/employees']">{{"admin.sidebar.employee_management" | translate}}
+                </li>
+                <li nz-menu-item>{{"admin.sidebar.user_management" | translate}}</li>
+            </ul>
         </li>
     </ul>
 </div>

@@ -12,7 +12,9 @@
         },
         "sidebar": {
             "dashboard": "Tổng quan",
-            "employees": "Nhân sự"
+            "account": "Tài khoản",
+            "employee_management": "Quản lý nhân sự",
+            "user_management": "Quản lý người dùng"
         },
         "dashboard": {
             "hello": "Xin chào!"

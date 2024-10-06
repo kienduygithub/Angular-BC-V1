@@ -12,7 +12,9 @@
         },
         "sidebar": {
             "dashboard": "Dashboard",
-            "employees": "Employees"
+            "account": "Account",
+            "employee_management": "Employee management",
+            "user_management": "User management"
         },
         "dashboard": {
             "hello": "Hello"
